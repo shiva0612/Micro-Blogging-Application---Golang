@@ -31,8 +31,8 @@ func app() {
 	r.POST("/users/login", uh.Login)
 
 	r.Use(h.Authenticate)
-	r.POST("/users", uh.GetUsers)
-	r.POST("/users", uh.GetUser) //from queryparam(username)
+	r.POST("/users/search", uh.GetUsers)
+	r.POST("/users/getuser", uh.GetUser)
 	r.GET("/users/view", uh.ViewUser)
 	r.PATCH("/users/edit", uh.Edit)
 	r.POST("/users/logout", uh.Logout)
