@@ -1,0 +1,14 @@
+{
+    "mongo":{
+        "port":"27017",
+        "username":"shiva",
+        "password":"shiva",
+        "authdb":"admin",
+        "dbname":"BlogPost"
+    },
+    "app":{
+        "port":"8080",
+        "jwt_secret":"secret",
+        "token_time":120
+    }
+}
